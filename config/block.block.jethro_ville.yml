@@ -1,0 +1,28 @@
+uuid: c0eb8306-d9b3-4c3e-aa77-568d5ecc5ad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.ville
+  module:
+    - facets
+    - system
+  theme:
+    - jethro
+id: jethro_ville
+theme: jethro
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:ville'
+settings:
+  id: 'facet_block:ville'
+  label: Ville
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/recherche-offre*'
+    negate: false
+    context_mapping: {  }

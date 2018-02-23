@@ -1,0 +1,68 @@
+/* Custom CSS overrides */
+.col-md-8 {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.container-fluid {
+	margin-top: 1em;
+	img {
+		width: 100%;
+		border: 3px solid;
+		padding: 3px;
+	}
+	p {
+		position: relative;
+		bottom: 60px;
+		left: 6px;
+	}
+}
+.col-md-4 {
+	margin-top: 0px;
+}
+section {
+	display: block;
+}
+#block-typedebien-4 {
+	display:inline-block;
+	width: 120px;
+}
+#block-nombredepieces-4 {
+	display:inline-block;
+	width: 120px;
+}
+#block-meublevide-4 {
+	display:inline-block;
+	width: 120px;
+}
+#block-action {
+	display:inline-block;
+	width: 120px;
+}
+#block-ville-4 {
+	display:inline-block;
+	width: 120px;
+}
+
+.prizou {
+	color:#5fb336;
+	font-weight: bold;
+}
+
+.localitey {
+	color:grey;
+	font-weight: bold;
+}
+.image-style-_00-200 {
+	border-radius: 3px;
+	}
+
+.image-style-thombnail-dweera {
+	border-radius: 3px;
+	 float:left;
+	 margin: 5px;
+}
+
+.makrotta {
+	margin: 2px;
+}

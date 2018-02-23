@@ -1,0 +1,109 @@
+/**
+ * Place your custom styles here.
+ */
+ 
+.col-sm-9 {
+    width: 100%;
+}
+section {
+	display: block;
+}
+#block-ville-3 {
+	display:inline-block;
+	width: 18%;
+}
+#block-typedebien-3 {
+	display:inline-block;
+	width: 18%;
+}
+#block-meublevide-3 {
+	display:inline-block;
+	width: 18%;
+}
+#block-nombredepieces-3 {
+	display:inline-block;
+	width: 18%;
+}
+#block-typedetransaction-3 {
+	display:inline-block;
+	width: 18%;
+}
+.col-sm-12 {
+	margin: auto;
+}
+.h2, h2 {
+    font-size: 18px;
+}
+.h1, h1 {
+    font-size: 25px;
+}
+/**
+.img-responsive {
+	display: block;
+    height: auto;
+    max-width: 25%;
+    float: left;
+}
+
+.offre {
+	border: solid #E7E7E7 1px;
+	margin: 20px;
+	box-shadow: solid;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px grey;
+}
+*/
+.makrotta {
+	color: red;
+}
+#navbar {
+	background-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: white;
+    color: grey;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #217dbb;
+}
+
+body {
+    color: #333;
+    font-family: "Helvetica",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+.prizou {
+	color:#217DBB;
+	font-weight: bold;
+}
+
+.makrotta {
+	font-weight: bold;
+}
+
+.localitey {
+	color:grey;
+	font-weight: bold;
+}
+
+.navbar-toggle {
+	background-color: #217DBB;
+}
+
+@media all and (max-device-width: 480px){
+	
+	#views-form-proximity-page-1--_Zkdzvs4Bh4
+    {
+
+        flex-direction: column;
+
+    }
+
+}
+
+.views-view-grid .views-row {
+    clear: both;
+    margin: 15px;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+uuid: 2a015def-3d08-4be6-8cb7-1827c83c70bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jethro
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: jethro_messages
+theme: jethro
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

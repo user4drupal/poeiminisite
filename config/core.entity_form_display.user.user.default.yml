@@ -1,0 +1,111 @@
+uuid: 84c2b66e-6027-4eb5-b024-4861cc9f5eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_adresse
+    - field.field.user.user.field_civilite
+    - field.field.user.user.field_denomination
+    - field.field.user.user.field_description
+    - field.field.user.user.field_logo
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_prenom
+    - field.field.user.user.field_siret
+    - field.field.user.user.field_site_web
+    - field.field.user.user.field_telephone
+    - field.field.user.user.field_type
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+  field_adresse:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_civilite:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_denomination:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_logo:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_nom:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+    type: string_textfield
+  field_prenom:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_siret:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_site_web:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_telephone:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  field_type: true
+  langcode: true
+  language: true
+  timezone: true
+  user_picture: true

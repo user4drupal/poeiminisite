@@ -1,0 +1,28 @@
+uuid: 8720321e-6b8b-42dc-b6fe-ae0d79148cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.meuble_vide_
+  module:
+    - facets
+    - system
+  theme:
+    - jethro
+id: jethro_meublevide_3
+theme: jethro
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:meuble_vide_'
+settings:
+  id: 'facet_block:meuble_vide_'
+  label: 'Meublé / vide '
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/recherche-offre*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,28 @@
+uuid: 5a34ebc4-edc0-4666-8c9a-d283d8cebe92
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type_de_bien
+  module:
+    - facets
+    - system
+  theme:
+    - jethro
+id: jethro_typedebien_2
+theme: jethro
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:type_de_bien'
+settings:
+  id: 'facet_block:type_de_bien'
+  label: 'Type de bien'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/recherche-offre*'
+    negate: false
+    context_mapping: {  }

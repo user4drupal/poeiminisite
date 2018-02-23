@@ -1,0 +1,27 @@
+uuid: 159d1f17-75f8-4949-8317-5696a40fd753
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_siret
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      professionnel: professionnel
+      100: 0
+      particulier: 0
+id: user.user.field_siret
+field_name: field_siret
+entity_type: user
+bundle: user
+label: Siret
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

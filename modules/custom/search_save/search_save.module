@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Contains search_save.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_help().
+ */
+function search_save_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the search_save module.
+    case 'help.page.search_save':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Sauvegarde des recherches') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function search_save_theme() {
+  return [
+    'search_save' => [
+      'template' => 'search_save',
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_views_pre_view().
+ * Check if user is logged.
+ *
+ */
+function search_save_views_pre_view(ViewExecutable $views, $display_id, array &$args)
+{
+
+	$config = \Drupal::config('search_save.savesearch')->get('view');
+
+	$view = explode(":",$config);
+	$current_user = \Drupal::currentUser();
+
+  if($views->id()==$view[0] && $views->current_display == $view[1] && $current_user->id() != 0){
+
+			$options = array(
+				'id' => 'search_save',
+				'table' => 'views',
+				'field' => 'area_text_custom',
+				'relationship' => 'none',
+				'group_type' => 'none',
+				'admin_label' => '',
+				'empty' => TRUE,
+				'tokenize' => FALSE,
+				'content' => '<a class="use-ajax" data-dialog-type="modal" 
+													href="/poeiminisite/search_save/form/search_save_front">Sauvegarder la recherche</a>',
+				'plugin_id' => 'text_custom',
+			);
+			$views->setHandler($view[1], 'header', 'search_save', $options);
+  }
+}
+
+
+/**
+ * Implementation of hook_menu_local_tasks_alter()
+ */
+function search_save_menu_local_tasks_alter(&$data, $router_item, $root_path){
+	if($data['tabs'][0]['user.register']){
+		unset($data['tabs'][0]['user.register']);
+	}
+}

@@ -1,0 +1,26 @@
+uuid: 181b19dc-5070-4b2f-b099-99daaacf4ef5
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - drupal8_zymphonies_theme
+_core:
+  default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
+id: drupal8_zymphonies_theme_tools
+theme: drupal8_zymphonies_theme
+region: '-1'
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

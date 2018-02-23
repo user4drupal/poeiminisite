@@ -1,0 +1,29 @@
+uuid: c63cb25e-d96a-43c9-b006-41e2c89b1118
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_telephone
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      professionnel: professionnel
+      100: 0
+      particulier: 0
+id: user.user.field_telephone
+field_name: field_telephone
+entity_type: user
+bundle: user
+label: Téléphone
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: xx.xx.xx.xx.xx
+default_value_callback: ''
+settings: {  }
+field_type: string

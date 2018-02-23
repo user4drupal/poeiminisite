@@ -1,0 +1,28 @@
+uuid: df93b1dd-d71f-4262-a45f-4db4587f5322
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type_de_transaction
+  module:
+    - facets
+    - system
+  theme:
+    - jethro
+id: jethro_typedetransaction_2
+theme: jethro
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:type_de_transaction'
+settings:
+  id: 'facet_block:type_de_transaction'
+  label: 'Type de transaction'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/recherche-offre*'
+    negate: false
+    context_mapping: {  }
